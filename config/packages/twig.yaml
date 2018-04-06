@@ -1,0 +1,6 @@
+twig:
+    paths:
+      '%kernel.project_dir%/templates': ~
+      '%kernel.project_dir%/vendor/benatespina/amp-twig-theme/templates': AMP
+    debug: '%kernel.debug%'
+    strict_variables: '%kernel.debug%'

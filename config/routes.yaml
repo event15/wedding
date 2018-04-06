@@ -1,0 +1,9 @@
+index:
+    path: /home
+    controller: App\Controller\HomeController::indexAction
+book:
+    path: /book
+    controller: App\Controller\HomeController::bookAction
+book_success:
+    path: /success
+    controller: App\Controller\HomeController::successAction
