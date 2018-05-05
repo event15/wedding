@@ -38,7 +38,7 @@ final class HomeController extends Controller
     {
         $data = [
             'title'    => 'Martyna <br> <span>&</span> Marek',
-            'subtitle' => 'Mają zaszczyt zaprosić (...)'
+            'subtitle' => 'Mają zaszczyt zaprosić w charakterze świadków <br> <br> Ogólnie znana teza głosi, iż użytkownika może rozpraszać zrozumiała zawartość strony, kiedy ten chce zobaczyć sam jej wygląd. Jedną z mocnych stron używania Lorem Ipsum jest to, że ma wiele różnych „kombinacji” zdań, słów i akapitów, w przeciwieństwie do zwykłego: „tekst, tekst, tekst”, sprawiającego, że wygląda to „zbyt czytelnie” po polsku.'
         ];
 
         return new JsonResponse($data, Response::HTTP_OK, ['Content-Type' => 'application/json']);
@@ -47,8 +47,8 @@ final class HomeController extends Controller
     public function descriptionAction(): JsonResponse
     {
         $data = [
-            'title'    => 'Martyna <br> <span>&</span> Marek',
-            'subtitle' => 'Mają zaszczyt zaprosić (...)'
+            'title'    => 'Czym jest Lorem Ipsum?',
+            'subtitle' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.'
         ];
 
         return new JsonResponse($data, Response::HTTP_OK, ['Content-Type' => 'application/json']);
@@ -57,8 +57,8 @@ final class HomeController extends Controller
     public function leafletAction(): JsonResponse
     {
         $data = [
-            'title'       => '',
-            'subtitle'    => '',
+            'title'       => 'Dojazd',
+            'subtitle'    => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
             'zoom'        => 12,
             'center'      => [54.0765753, 18.6546609],
             'markers'     => [
@@ -75,9 +75,9 @@ final class HomeController extends Controller
     public function churchAction(): JsonResponse
     {
         $data = [
-            'title'    => '',
-            'subtitle' => '',
-            'image'    => ''
+            'title'    => 'Kościół',
+            'subtitle' => 'Lorem ipsum dolor sit amet,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            'image'    => 'church'
         ];
 
         return new JsonResponse($data, Response::HTTP_OK, ['Content-Type' => 'application/json']);
@@ -86,9 +86,9 @@ final class HomeController extends Controller
     public function roomAction(): JsonResponse
     {
         $data = [
-            'title'    => '',
-            'subtitle' => '',
-            'image'    => ''
+            'title'    => 'Wesele',
+            'subtitle' => 'Lorem ipsum dolor sit amet,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            'image'    => 'room'
         ];
 
         return new JsonResponse($data, Response::HTTP_OK, ['Content-Type' => 'application/json']);
@@ -97,9 +97,9 @@ final class HomeController extends Controller
     public function room2Action(): JsonResponse
     {
         $data = [
-            'title'    => '',
-            'subtitle' => '',
-            'image'    => ''
+            'title'    => 'Poprawiny',
+            'subtitle' => 'Lorem ipsum dolor sit amet,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            'image'    => 'room2'
         ];
 
         return new JsonResponse($data, Response::HTTP_OK, ['Content-Type' => 'application/json']);
@@ -108,9 +108,9 @@ final class HomeController extends Controller
     public function contactAction(): JsonResponse
     {
         $data = [
-            'title'    => '',
-            'subtitle' => '',
-            'image'    => ''
+            'title'    => 'Nocleg',
+            'subtitle' => 'Lorem ipsum dolor sit amet,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. consectetur adipisicing elit.',
+            'image'    => 'contact'
         ];
 
         return new JsonResponse($data, Response::HTTP_OK, ['Content-Type' => 'application/json']);
