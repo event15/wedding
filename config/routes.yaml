@@ -1,9 +1,24 @@
-index:
-    path: /home
-    controller: App\Controller\HomeController::indexAction
-book:
-    path: /book
-    controller: App\Controller\HomeController::bookAction
-book_success:
-    path: /success
-    controller: App\Controller\HomeController::successAction
+header:
+    path: /api/header
+    controller: App\Controller\HomeController::headerAction
+description:
+    path: /api/description
+    controller: App\Controller\HomeController::descriptionAction
+leaflet:
+    path: /api/leaflet
+    controller: App\Controller\HomeController::leafletAction
+church:
+    path: /api/church
+    controller: App\Controller\HomeController::churchAction
+room:
+    path: /api/room
+    controller: App\Controller\HomeController::roomAction
+room2:
+    path: /api/room2
+    controller: App\Controller\HomeController::room2Action
+contact:
+    path: /api/contact
+    controller: App\Controller\HomeController::contactAction
+slides:
+    path: /api/slides
+    controller: App\Controller\HomeController::slidesAction

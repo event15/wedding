@@ -2,12 +2,13 @@
 
 namespace App\Controller;
 
+use App\Service\JsonSerializer;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\Form\{
-    Extension\Core\Type\CheckboxType, Extension\Core\Type\EmailType, Extension\Core\Type\IntegerType, Extension\Core\Type\SubmitType, Extension\Core\Type\TextType
-};
 use Symfony\Component\{
     HttpFoundation\JsonResponse, HttpFoundation\Request, HttpFoundation\Response, Validator\Constraints\Email, Validator\Constraints\GreaterThanOrEqual, Validator\Constraints\Length, Validator\Constraints\LessThanOrEqual, Validator\Constraints\NotBlank, Validator\Constraints\Required, Validator\Constraints\Type
+};
+use Symfony\Component\Form\{
+    Extension\Core\Type\CheckboxType, Extension\Core\Type\EmailType, Extension\Core\Type\IntegerType, Extension\Core\Type\SubmitType, Extension\Core\Type\TextType
 };
 
 /**
@@ -31,6 +32,102 @@ final class HomeController extends Controller
         ];
 
         return new JsonResponse($number, Response::HTTP_OK, ['Content-Type' => 'application/json']);
+    }
+
+    public function headerAction(): JsonResponse
+    {
+        $data = [
+            'title'    => 'Martyna <br> <span>&</span> Marek',
+            'subtitle' => 'Mają zaszczyt zaprosić (...)'
+        ];
+
+        return new JsonResponse($data, Response::HTTP_OK, ['Content-Type' => 'application/json']);
+    }
+
+    public function descriptionAction(): JsonResponse
+    {
+        $data = [
+            'title'    => 'Martyna <br> <span>&</span> Marek',
+            'subtitle' => 'Mają zaszczyt zaprosić (...)'
+        ];
+
+        return new JsonResponse($data, Response::HTTP_OK, ['Content-Type' => 'application/json']);
+    }
+
+    public function leafletAction(): JsonResponse
+    {
+        $data = [
+            'title'       => '',
+            'subtitle'    => '',
+            'zoom'        => 12,
+            'center'      => [54.0765753, 18.6546609],
+            'markers'     => [
+                'Kościół'      => [54.0894, 18.7079],
+                'Sala weselna' => [54.07448, 18.70087]
+            ],
+            'url'         => 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+            'attribution' => '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        ];
+
+        return new JsonResponse($data, Response::HTTP_OK, ['Content-Type' => 'application/json']);
+    }
+
+    public function churchAction(): JsonResponse
+    {
+        $data = [
+            'title'    => '',
+            'subtitle' => '',
+            'image'    => ''
+        ];
+
+        return new JsonResponse($data, Response::HTTP_OK, ['Content-Type' => 'application/json']);
+    }
+
+    public function roomAction(): JsonResponse
+    {
+        $data = [
+            'title'    => '',
+            'subtitle' => '',
+            'image'    => ''
+        ];
+
+        return new JsonResponse($data, Response::HTTP_OK, ['Content-Type' => 'application/json']);
+    }
+
+    public function room2Action(): JsonResponse
+    {
+        $data = [
+            'title'    => '',
+            'subtitle' => '',
+            'image'    => ''
+        ];
+
+        return new JsonResponse($data, Response::HTTP_OK, ['Content-Type' => 'application/json']);
+    }
+
+    public function contactAction(): JsonResponse
+    {
+        $data = [
+            'title'    => '',
+            'subtitle' => '',
+            'image'    => ''
+        ];
+
+        return new JsonResponse($data, Response::HTTP_OK, ['Content-Type' => 'application/json']);
+    }
+
+    public function slidesAction(): JsonResponse
+    {
+        $otherData = $this->container->get('App\Controller\HomeController');
+
+        $data = [
+            'leaflet'     => JsonSerializer::deserialize($otherData->leafletAction()->getContent()),
+            'church'      => JsonSerializer::deserialize($otherData->churchAction()->getContent()),
+            'room'        => JsonSerializer::deserialize($otherData->roomAction()->getContent()),
+            'room2'       => JsonSerializer::deserialize($otherData->room2Action()->getContent()),
+        ];
+
+        return new JsonResponse($data, Response::HTTP_OK, ['Content-Type' => 'application/json']);
     }
 
     /**
