@@ -121,10 +121,10 @@ final class HomeController extends Controller
         $otherData = $this->container->get('App\Controller\HomeController');
 
         $data = [
-            ['leaflet'     => JsonSerializer::deserialize($otherData->leafletAction()->getContent())],
-            ['church'      => JsonSerializer::deserialize($otherData->churchAction()->getContent())],
-            ['room'        => JsonSerializer::deserialize($otherData->roomAction()->getContent())],
-            ['room2'       => JsonSerializer::deserialize($otherData->room2Action()->getContent())],
+            [ JsonSerializer::deserialize($otherData->leafletAction()->getContent())],
+            [ JsonSerializer::deserialize($otherData->churchAction()->getContent())],
+            [ JsonSerializer::deserialize($otherData->roomAction()->getContent())],
+            [ JsonSerializer::deserialize($otherData->room2Action()->getContent())],
         ];
 
         return new JsonResponse($data, Response::HTTP_OK, ['Content-Type' => 'application/json']);
