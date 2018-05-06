@@ -140,7 +140,7 @@ final class HomeController extends Controller
      */
     public function bookAction(Request $request)
     {
-        $currentData = JsonSerializer::deserialize($request->getContent());
+        $currentData = $request->getContent();
 
         $result = '';
 
@@ -148,6 +148,6 @@ final class HomeController extends Controller
             $result = 'OK';
         }
 
-        return new JsonResponse($result, Response::HTTP_OK, ['Content-Type' => 'application/json']);
+        return new JsonResponse($currentData, Response::HTTP_OK, ['Content-Type' => 'application/json']);
     }
 }
