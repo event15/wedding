@@ -1,24 +1,32 @@
 header:
     path: /api/header
     controller: App\Controller\HomeController::headerAction
+    methods: [GET]
 description:
     path: /api/description
     controller: App\Controller\HomeController::descriptionAction
+    methods: [GET]
 leaflet:
     path: /api/leaflet
     controller: App\Controller\HomeController::leafletAction
+    methods: [GET]
 church:
     path: /api/church
     controller: App\Controller\HomeController::churchAction
+    methods: [GET]
 room:
     path: /api/room
     controller: App\Controller\HomeController::roomAction
+    methods: [GET]
 room2:
     path: /api/room2
     controller: App\Controller\HomeController::room2Action
+    methods: [GET]
 contact:
     path: /api/contact
     controller: App\Controller\HomeController::contactAction
+    methods: [GET]
 slides:
     path: /api/slides
     controller: App\Controller\HomeController::slidesAction
+    methods: [GET]
