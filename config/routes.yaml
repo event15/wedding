@@ -30,3 +30,7 @@ slides:
     path: /api/slides
     controller: App\Controller\HomeController::slidesAction
     methods: [GET]
+book:
+    path: /api/book
+    controller: App\Controller\HomeController::bookAction
+    methods: [POST]

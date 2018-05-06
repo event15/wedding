@@ -140,65 +140,14 @@ final class HomeController extends Controller
      */
     public function bookAction(Request $request)
     {
-        $form = $this->createFormBuilder()
-                     ->add('name', TextType::class, [
-                         'constraints' => [
-                             new Required(),
-                             new NotBlank(),
-                             new Length(['min' => 3, 'max' => 30])
-                         ]
-                     ])
-                     ->add('surname', TextType::class, [
-                         'constraints' => [
-                             new Required(),
-                             new NotBlank(),
-                             new Length(['min' => 3, 'max' => 30])
-                         ]
-                     ])
-                     ->add('mail', EmailType::class, [
-                         'constraints' => [
-                             new Required(),
-                             new NotBlank(),
-                             new Email([
-                                 'message' => 'The email "{{ value }}" is not a valid email.',
-                                 'checkHost' => true,
-                                 'checkMX' => true,
-                                 'strict' => true
-                             ]),
-                             new Length(['min' => 3])
-                         ]
-                     ])
-                     ->add('accomodation', CheckboxType::class, [
-                         'constraints' => [
-                             new Required(),
-                             new Type(['type' => 'bool']),
-                             new NotBlank()
-                         ]
-                     ])
-                     ->add('numberOfPeople', IntegerType::class,[
-                         'constraints' => [
-                             new Required(),
-                             new Type(['type' => 'integer']),
-                             new NotBlank(),
-                             new GreaterThanOrEqual(['value' => 0]),
-                             new LessThanOrEqual(['value' => 10])
-                         ]
-                     ])
-                     ->add('submit', SubmitType::class)
-                     ->getForm();
+        $currentData = JsonSerializer::deserialize($request->getContent());
 
-        $handledRequest = $form->handleRequest($request);
+        $result = '';
 
-
-        if ($handledRequest->isSubmitted() && $form->isValid()) {
-            $data = $handledRequest->getNormData();
-
-            return new JsonResponse($data, 200);
+        if ($currentData) {
+            $result = 'OK';
         }
 
-        return $this->render(
-            'base.html.twig', [
-            'form' => $form->createView()
-        ]);
+        return new JsonResponse($result, Response::HTTP_OK, ['Content-Type' => 'application/json']);
     }
 }
