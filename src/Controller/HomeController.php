@@ -38,7 +38,8 @@ final class HomeController extends Controller
     {
         $data = [
             'title'    => 'Martyna <br> <span>&</span> Marek',
-            'subtitle' => 'Mają zaszczyt zaprosić w charakterze świadków <br> <br> Ogólnie znana teza głosi, iż użytkownika może rozpraszać zrozumiała zawartość strony, kiedy ten chce zobaczyć sam jej wygląd. Jedną z mocnych stron używania Lorem Ipsum jest to, że ma wiele różnych „kombinacji” zdań, słów i akapitów, w przeciwieństwie do zwykłego: „tekst, tekst, tekst”, sprawiającego, że wygląda to „zbyt czytelnie” po polsku.'
+            'subtitle' => 'Mają zaszczyt zaprosić w charakterze świadków <br> <br> Ogólnie znana teza głosi, iż użytkownika może rozpraszać zrozumiała zawartość strony, kiedy ten chce zobaczyć sam jej wygląd. Jedną z mocnych stron używania Lorem Ipsum jest to, że ma wiele różnych „kombinacji” zdań, słów i akapitów, w przeciwieństwie do zwykłego: „tekst, tekst, tekst”, sprawiającego, że wygląda to „zbyt czytelnie” po polsku.',
+            'image'    => 'http://wrzesniowyslub.pl/images/header.jpg'
         ];
 
         return new JsonResponse($data, Response::HTTP_OK, ['Content-Type' => 'application/json']);
@@ -77,7 +78,7 @@ final class HomeController extends Controller
         $data = [
             'title'    => 'Kościół',
             'subtitle' => 'Lorem ipsum dolor sit amet,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-            'image'    => 'church'
+            'image'    => 'http://wrzesniowyslub.pl/images/church.jpg'
         ];
 
         return new JsonResponse($data, Response::HTTP_OK, ['Content-Type' => 'application/json']);
@@ -88,7 +89,7 @@ final class HomeController extends Controller
         $data = [
             'title'    => 'Wesele',
             'subtitle' => 'Lorem ipsum dolor sit amet,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-            'image'    => 'room'
+            'image'    => 'http://wrzesniowyslub.pl/images/room.jpg'
         ];
 
         return new JsonResponse($data, Response::HTTP_OK, ['Content-Type' => 'application/json']);
@@ -99,7 +100,7 @@ final class HomeController extends Controller
         $data = [
             'title'    => 'Poprawiny',
             'subtitle' => 'Lorem ipsum dolor sit amet,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-            'image'    => 'room2'
+            'image'    => 'http://wrzesniowyslub.pl/images/room2.jpg'
         ];
 
         return new JsonResponse($data, Response::HTTP_OK, ['Content-Type' => 'application/json']);
@@ -110,7 +111,7 @@ final class HomeController extends Controller
         $data = [
             'title'    => 'Nocleg',
             'subtitle' => 'Lorem ipsum dolor sit amet,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. consectetur adipisicing elit.',
-            'image'    => 'contact'
+            'image'    => 'http://wrzesniowyslub.pl/images/contact.jpg'
         ];
 
         return new JsonResponse($data, Response::HTTP_OK, ['Content-Type' => 'application/json']);
