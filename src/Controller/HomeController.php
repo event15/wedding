@@ -70,7 +70,7 @@ final class HomeController extends Controller
             'title'       => 'Dojazd',
             'subtitle'    => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
             'zoom'        => 12,
-            'center'      => [53.8074, 15.70245],
+            'center'      => [53.8013, 15.7384],
             'markers'     => [
                 'Kościół'      => [53.86478, 15.64088],
                 'Sala weselna' => [53.75001, 15.76402]
