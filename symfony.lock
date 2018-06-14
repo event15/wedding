@@ -32,6 +32,9 @@
             "ref": "2becca99cc83c0e6d2ad68875fa84c516298dec4"
         }
     },
+    "symfony/asset": {
+        "version": "v4.1.0"
+    },
     "symfony/cache": {
         "version": "v4.0.7"
     },

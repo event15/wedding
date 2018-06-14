@@ -1,3 +1,7 @@
+home:
+    path: /
+    controller: App\Controller\HomeController::homeViewAction
+    methods: [GET]
 header:
     path: /api/header
     controller: App\Controller\HomeController::headerAction

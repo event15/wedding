@@ -6,8 +6,10 @@
         "ext-iconv": "*",
         "egulias/email-validator": "^2.1",
         "symfony-bundles/redis-bundle": "^2.1",
+        "symfony/asset": "^4.0",
         "symfony/cache": "^4.0",
         "symfony/console": "^4.0",
+        "symfony/dotenv": "^4.0",
         "symfony/flex": "^1.0",
         "symfony/form": "^4.0",
         "symfony/framework-bundle": "^4.0",
@@ -18,8 +20,7 @@
         "symfony/twig-bridge": "^4.0",
         "symfony/twig-bundle": "^4.0",
         "symfony/validator": "^4.0",
-        "symfony/yaml": "^4.0",
-        "symfony/dotenv": "^4.0"
+        "symfony/yaml": "^4.0"
     },
     "require-dev": {
         "easycorp/easy-deploy-bundle": "^1.0",

@@ -34,6 +34,15 @@ final class HomeController extends Controller
         return new JsonResponse($number, Response::HTTP_OK, ['Content-Type' => 'application/json']);
     }
 
+    /**
+     * @return Response
+     * @throws \InvalidArgumentException
+     */
+    public function homeViewAction()
+    {
+        return $this->render('base.html.twig');
+    }
+
     public function headerAction(): JsonResponse
     {
         $data = [
