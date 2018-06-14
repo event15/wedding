@@ -70,10 +70,10 @@ final class HomeController extends Controller
             'title'       => 'Dojazd',
             'subtitle'    => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
             'zoom'        => 12,
-            'center'      => [54.0765753, 18.6546609],
+            'center'      => [53.8074, 15.70245],
             'markers'     => [
-                'Kościół'      => [54.0894, 18.7079],
-                'Sala weselna' => [54.07448, 18.70087]
+                'Kościół'      => [53.86478, 15.64088],
+                'Sala weselna' => [53.75001, 15.76402]
             ],
             'url'         => 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
             'attribution' => '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
