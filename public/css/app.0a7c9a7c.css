@@ -467,7 +467,7 @@ strong {
 }
 
 #about {
-    /*display: none;*/
+    display: none;
     position: relative;
     width: 1440px;
     max-width: 95%;

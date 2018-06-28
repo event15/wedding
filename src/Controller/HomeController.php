@@ -55,7 +55,7 @@ final class HomeController extends Controller
     {
         $data = [
             'title'    => '',
-            'subtitle' => '<div id="content"><h1 class="alt-1">24h00m59s</h1></div>'
+            'subtitle' => ''
         ];
 
         return new JsonResponse($data, Response::HTTP_OK, ['Content-Type' => 'application/json']);
