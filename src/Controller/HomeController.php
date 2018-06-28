@@ -55,7 +55,7 @@ final class HomeController extends Controller
     {
         $data = [
             'title'    => '',
-            'subtitle' => '<h1 class="alt-1"><time class="countdown-alt-1" datetime="PT23H57M49S"><span class="item item-hh"><span class="hh-1">2</span><span class="hh-2">3</span><span class="label label-hh">hours</span></span><span class="separator">:</span><span class="item item-mm"><span class="mm-1">5</span><span class="mm-2">7</span><span class="label label-mm">minutes</span></span><span class="separator">:</span><span class="item item-ss"><span class="ss-1">4</span><span class="ss-2">9</span><span class="label label-ss">seconds</span></span></time></h1>'
+            'subtitle' => ''
         ];
 
         return new JsonResponse($data, Response::HTTP_OK, ['Content-Type' => 'application/json']);
