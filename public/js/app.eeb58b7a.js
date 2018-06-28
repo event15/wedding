@@ -119,7 +119,7 @@ webpackJsonp([1], {
                 }), a("label", {
                     staticClass: "label",
                     attrs: {for: "email"}
-                }, [t._v("Adres e-mail")]), a("input", {
+                }, [t._v("Numer teleofonu")]), a("input", {
                     directives: [{
                         name: "model",
                         rawName: "v-model",
@@ -128,8 +128,8 @@ webpackJsonp([1], {
                     }, {
                         name: "validate",
                         rawName: "v-validate",
-                        value: "required:true|email",
-                        expression: "'required:true|email'"
+                        value: "required:true",
+                        expression: "'required:true'"
                     }],
                     class: {"has-error": t.errors.has("email")},
                     attrs: {id: "email", type: "text", name: "email"},
@@ -191,7 +191,7 @@ webpackJsonp([1], {
                 }), t._m(1)])]), t._m(2)])])
             }, x = [function () {
                 var t = this, e = t.$createElement, a = t._self._c || e;
-                return a("label", {staticClass: "checkbox", attrs: {for: "hotel"}}, [a("span", [t._v("Noc w hotelu?")])])
+                return a("label", {staticClass: "checkbox", attrs: {for: "hotel"}}, [a("span", [t._v("Potrzebujemy noclegu")])])
             }, function () {
                 var t = this, e = t.$createElement, a = t._self._c || e;
                 return a("label", {staticClass: "submit", attrs: {for: "submit"}}, [a("span", [t._v("Wyślij")])])
