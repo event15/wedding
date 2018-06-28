@@ -116,7 +116,7 @@ final class HomeController extends Controller
     {
         $data = [
             'title'    => 'RSVP',
-            'subtitle' => 'Lorem ipsum dolor sit amet,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. consectetur adipisicing elit.',
+            'subtitle' => 'RSVP, czyli skrótowiec pochodzący od francuskiego zwrotu <i>répondez s’il vous plaît</i> (dosłownie: proszę odpowiedzieć).<br>',
             'image'    => 'http://wrzesniowyslub.pl/images/contact.jpg'
         ];
 
