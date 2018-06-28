@@ -47,7 +47,7 @@ final class HomeController extends Controller
     {
         $data = [
             'title'    => 'Martyna <br> <span>&</span> Marek',
-            'subtitle' => 'Mają zaszczyt zaprosić w charakterze świadków <br> <br> Ogólnie znana teza głosi, iż użytkownika może rozpraszać zrozumiała zawartość strony, kiedy ten chce zobaczyć sam jej wygląd. Jedną z mocnych stron używania Lorem Ipsum jest to, że ma wiele różnych „kombinacji” zdań, słów i akapitów, w przeciwieństwie do zwykłego: „tekst, tekst, tekst”, sprawiającego, że wygląda to „zbyt czytelnie” po polsku.',
+            'subtitle' => 'Ty i ja spośród tysięcy<br>mocno trzymamy się za ręce.<br>Niezwykły dzień, doniosła chwila<br>i szept nieśmiały: miły... miła...<br>Odtąd już razem zawsze i wszędzie,<br>tak miało być i niech tak będzie!',
             'image'    => 'http://wrzesniowyslub.pl/images/header.jpg'
         ];
 
@@ -68,12 +68,12 @@ final class HomeController extends Controller
     {
         $data = [
             'title'       => 'Dojazd',
-            'subtitle'    => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-            'zoom'        => 12,
+            'subtitle'    => '',
+            'zoom'        => 10,
             'center'      => [53.8013, 15.7384],
             'markers'     => [
                 'Kościół'      => [53.86478, 15.64088],
-                'Sala weselna' => [53.75001, 15.76402]
+                'Sala weselna' => [53.75001, 15.46402]
             ],
             'url'         => 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
             'attribution' => '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
