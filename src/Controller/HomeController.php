@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Service\JsonSerializer;
+use PHPMailer\PHPMailer\PHPMailer;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\{
     HttpFoundation\JsonResponse, HttpFoundation\Request, HttpFoundation\Response
@@ -150,6 +151,18 @@ final class HomeController extends Controller
         $currentData = $request->getContent();
 
         $result = '';
+
+        $mail = new PHPMailer;
+        $mail->setFrom('potwierdzenie@wrzesniowyslub.pl', 'Potwierdzenie Rejestracji');
+        $mail->addAddress('marwo12@gmail.com', 'My Friend');
+        $mail->Subject  = 'First PHPMailer Message';
+        $mail->Body     = 'Hi! This is my first e-mail sent through PHPMailer.';
+        if(!$mail->send()) {
+            echo 'Message was not sent.';
+            echo 'Mailer error: ' . $mail->ErrorInfo;
+        } else {
+            echo 'Message has been sent.';
+        }
 
         if ($currentData) {
             $result = 'OK';
