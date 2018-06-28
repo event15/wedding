@@ -115,7 +115,7 @@ final class HomeController extends Controller
     public function contactAction(): JsonResponse
     {
         $data = [
-            'title'    => 'Potwierdzenie przybycia',
+            'title'    => 'R.S.V.P.',
             'subtitle' => 'Lorem ipsum dolor sit amet,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. consectetur adipisicing elit.',
             'image'    => 'http://wrzesniowyslub.pl/images/contact.jpg'
         ];
