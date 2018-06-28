@@ -72,8 +72,8 @@ final class HomeController extends Controller
             'zoom'        => 10,
             'center'      => [53.8013, 15.2384],
             'markers'     => [
-                'Kościół, <br>Słowieńsko'      => [53.86477, 15.64087],
-                'Sala weselna, <br>ul. Wczasowa 1<br>78-300 Świdwin' => [53.75000, 15.76401]
+                '<strong>Kościół Rzymskokatolicki</strong><br>pw.&nbsp;św.&nbsp;Michała,<br>Słowieńsko, 78-314'      => [53.86477, 15.64087],
+                '<strong>Sala weselna</strong><br>Ośrodek&nbsp;Wczasowo-Rekreacyjny,<br>Wczasowa 1, 78-300 Świdwin' => [53.75000, 15.76401]
             ],
             'url'         => 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
             'attribution' => '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
