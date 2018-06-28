@@ -910,7 +910,7 @@ strong {
 #contact .text div:not(.message) {
     position: absolute;
     left: -200px;
-    top: -50px
+    top: -150px
 }
 
 @media (max-width: 1024px) {
