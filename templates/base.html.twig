@@ -11,10 +11,28 @@
     <link rel=preload as=style href={{ asset('/css/app.0a7c9a7c.css') }}>
     <link href={{ asset('/css/app.0a7c9a7c.css') }} rel=stylesheet>
     <link rel="stylesheet" href="{{ asset('/css/countdown.demo.css') }}" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="{{ asset('/js/jquery.countdown.js') }}"></script>
 </head>
 <body>
 <noscript><strong>We're sorry but html doesn't work properly without JavaScript enabled. Please enable it to
         continue.</strong></noscript>
+<script>
+    window.jQuery(function ($) {
+        "use strict";
+
+        $('time').countDown({
+            with_separators: false
+        });
+        $('.alt-1').countDown({
+            css_class: 'countdown-alt-1'
+        });
+        $('.alt-2').countDown({
+            css_class: 'countdown-alt-2'
+        });
+
+    });
+</script>
 <div id=app></div>
 <script type=text/javascript>(function (r) {
         var n = window["webpackJsonp"];
@@ -50,25 +68,6 @@
         }
     })([]);
     //# sourceMappingURL=/js/manifest.bb41d6d8.js.map</script>
-
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="{{ asset('/js/jquery.countdown.js') }}"></script>
-<script>
-    window.jQuery(function ($) {
-        "use strict";
-
-        $('time').countDown({
-            with_separators: false
-        });
-        $('.alt-1').countDown({
-            css_class: 'countdown-alt-1'
-        });
-        $('.alt-2').countDown({
-            css_class: 'countdown-alt-2'
-        });
-
-    });
-</script>
 <script type=text/javascript src={{  asset('/js/vendor.d50c1817.js') }}></script>
 <script type=text/javascript src={{ asset('/js/app.eeb58b7a.js') }}></script>
 </body>
