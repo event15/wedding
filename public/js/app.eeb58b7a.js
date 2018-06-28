@@ -36,7 +36,7 @@ webpackJsonp([1], {
                 }
             }, u = function () {
                 var t = this, e = t.$createElement, a = t._self._c || e;
-                return a("section", {attrs: {id: "header"}}, [a("div", {staticClass: "wrapper"}, [a("img", {attrs: {src: "http://wrzesniowyslub.pl/images/header.jpg"}}), a("div", {staticClass: "text"}, [a("h1", {domProps: {innerHTML: t._s(t.data.title)}}), a("p", {domProps: {innerHTML: t._s(t.data.subtitle)}})])])])
+                return a("section", {attrs: {id: "header"}}, [a("div", {staticClass: "wrapper"}, [a("img", {attrs: {src: "http://wrzesniowyslub.pl/images/header-kopia.jpg"}}), a("div", {staticClass: "text"}, [a("h1", {domProps: {innerHTML: t._s(t.data.title)}}), a("p", {domProps: {innerHTML: t._s(t.data.subtitle)}})])])])
             }, p = [], d = a("XyMi"), m = !1, v = null, h = null, f = null, b = Object(d["a"])(c, u, p, m, v, h, f),
             g = b.exports, _ = (a("EuXz"), {
                 name: "slide-contact", inject: ["$validator"], data: function () {
