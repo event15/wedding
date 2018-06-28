@@ -86,7 +86,7 @@ final class HomeController extends Controller
     {
         $data = [
             'title'    => 'Kościół',
-            'subtitle' => 'W kościele spotykamy się wszyscy, aby wspólnie przeżyć uroczystość zawarcia małżeństwa Martyny i&nbsp;Marka.<br>Ceremonia ślubna zaczyna się o godzinie 15:30.',
+            'subtitle' => 'W kościele spotykamy się wszyscy, aby wspólnie przeżyć uroczystość zawarcia małżeństwa Martyny&nbsp;i&nbsp;Marka.<br>Ceremonia ślubna zaczyna się o&nbsp;godzinie 15:30.',
             'image'    => 'http://wrzesniowyslub.pl/images/church.jpg'
         ];
 
