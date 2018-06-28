@@ -115,7 +115,7 @@ final class HomeController extends Controller
     public function contactAction(): JsonResponse
     {
         $data = [
-            'title'    => 'RSVP',
+            'title'    => 'Potwierdzenie przybycia<br>',
             'subtitle' => "<strong>RSVP</strong>, czyli skrótowiec pochodzący od francuskiego zwrotu <i>répondez s’il vous plaît</i> (dosłownie: proszę odpowiedzieć).<br>",
             'image'    => 'http://wrzesniowyslub.pl/images/contact.jpg'
         ];
