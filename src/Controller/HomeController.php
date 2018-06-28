@@ -72,7 +72,7 @@ final class HomeController extends Controller
             'zoom'        => 10,
             'center'      => [53.8013, 15.2384],
             'markers'     => [
-                'Kościół, <br>Słowieńsko'      => [53.86477, 15.64087, 'OSM_marker_text'],
+                'Kościół, <br>Słowieńsko'      => [53.86477, 15.64087],
                 'Sala weselna, <br>ul. Wczasowa 1<br>78-300 Świdwin' => [53.75000, 15.76401]
             ],
             'url'         => 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
@@ -86,7 +86,7 @@ final class HomeController extends Controller
     {
         $data = [
             'title'    => 'Kościół',
-            'subtitle' => 'Lorem ipsum dolor sit amet,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            'subtitle' => 'W kościele spotykamy się wszyscy, aby wspólnie przeżyć uroczystość zawarcia małżeństwa Martyny i Marka.<br>Ceremonia ślubna zaczyna się o godzinie 15:30.',
             'image'    => 'http://wrzesniowyslub.pl/images/church.jpg'
         ];
 
