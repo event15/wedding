@@ -9,7 +9,7 @@
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
-    font-family: Book Antiqua, sans-serif;
+    font-family: Book Antiqua;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
@@ -193,7 +193,7 @@ body {
     background-color: #fff;
     font-size: 16px;
     line-height: 1.6;
-    font-family: Book Antiqua, Open Sans;
+    font-family: Book Antiqua;
     color: #111;
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%
