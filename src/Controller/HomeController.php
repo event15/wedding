@@ -94,7 +94,7 @@ final class HomeController extends Controller
     {
         $data = [
             'title'    => 'Wesele',
-            'subtitle' => 'Weselmy się i&nbsp;świętujmy małżeństwo Martyny&nbsp;i&nbsp;Marka w&nbsp;leśnym zaciszu jeziora Bukowiec. Parkiet będzie – miejmy nadzieję – zawsze pełny!<br>Zaczynamy o&nbsp;<strong>17:30</strong>',
+            'subtitle' => 'Weselmy się i&nbsp;świętujmy małżeństwo Martyny&nbsp;i&nbsp;Marka w&nbsp;leśnym zaciszu jeziora Bukowiec. Parkiet będzie – miejmy nadzieję – zawsze pełny!<br>Zaczynamy o&nbsp;<strong>17:30</strong>.',
             'image'    => 'http://wrzesniowyslub.pl/images/bukowiec.png'
         ];
 
@@ -105,7 +105,7 @@ final class HomeController extends Controller
     {
         $data = [
             'title'    => 'Poprawiny',
-            'subtitle' => 'Lorem ipsum dolor sit amet,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            'subtitle' => 'Po nocnej zabawie zregenerujmy siły na poprawinach, które&nbsp;rozpoczną się o&nbsp;godzinie&nbsp;<strong>13:00</strong>.',
             'image'    => 'http://wrzesniowyslub.pl/images/room2.jpg'
         ];
 
