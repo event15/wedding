@@ -68,12 +68,12 @@ final class HomeController extends Controller
     {
         $data = [
             'title'       => 'Dojazd',
-            'subtitle'    => '',
+            'subtitle'    => '<strong>Ceremonia ślubna</strong> odbędzie się w Słowieńsku, w Kościele pod wyzwaniem Michała Archanioła.<br><strong>Przyjęcie weselne</strong> odbędzie się nad jeziorem, w ośrodku Bukowiec.',
             'zoom'        => 10,
             'center'      => [53.8013, 15.2384],
             'markers'     => [
-                'Kościół'      => [53.86478, 15.64088],
-                'Sala weselna' => [53.75001, 15.46402]
+                'Kościół, <br>Słowieńsko'      => [53.86478, 15.64088],
+                'Sala weselna, <br>ul. Wczasowa 1<br>78-300 Świdwin' => [53.75001, 15.46402]
             ],
             'url'         => 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
             'attribution' => '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
