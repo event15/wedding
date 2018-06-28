@@ -932,7 +932,6 @@ strong {
 
 #contact h2 {
     font-family: Parisienne, cursive;
-    text-indent: 15px;
     text-align: left;
     font-size: 70px;
     line-height: 1.2;
@@ -966,6 +965,7 @@ strong {
     font-size: 18px;
     margin-top: 2rem;
     max-width: 290px;
+    text-indent: 15px;
 }
 
 @media (max-width: 1024px) {
