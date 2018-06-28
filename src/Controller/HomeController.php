@@ -73,7 +73,7 @@ final class HomeController extends Controller
             'center'      => [53.8013, 15.2384],
             'markers'     => [
                 '<strong>Kościół Rzymskokatolicki</strong><br>pw.&nbsp;św.&nbsp;Michała,<br>Słowieńsko, 78-314'      => [53.86477, 15.64087],
-                '<strong>Sala weselna</strong><br>Ośrodek&nbsp;Wczasowo-Rekreacyjny,<br>Wczasowa 1, 78-300 Świdwin' => [53.75000, 15.76401]
+                '<strong>Sala weselna</strong><br>Ośrodek&nbsp;Wczasowo&#8209;Rekreacyjny,<br>Wczasowa 1, 78-300 Świdwin' => [53.75000, 15.76401]
             ],
             'url'         => 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
             'attribution' => '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
@@ -97,7 +97,7 @@ final class HomeController extends Controller
     {
         $data = [
             'title'    => 'Wesele',
-            'subtitle' => 'Lorem ipsum dolor sit amet,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            'subtitle' => 'Przyjęcie weselne będziemy mogli wspólnie świętować w&nbsp;Ośrodku Wczasowo&#8209;Rekreacyjnym w&nbsp;leśnym zaciszu jeziora Bukowiec.<br>Zabawa będzie trwać — miejmy nadzieję — do białego rana! Zaczynamy o <strong>17:30</strong>',
             'image'    => 'http://wrzesniowyslub.pl/images/bukowiec.png'
         ];
 
