@@ -43,7 +43,7 @@ final class HomeController extends Controller
     public function headerAction(): JsonResponse
     {
         $data = [
-            'title'    => 'Martyna <span>&</span> Marek',
+            'title'    => 'Martyna <span>&</span> Marek<br>',
             'subtitle' => '<i>Ty i ja spośród tysięcy<br>mocno trzymamy się za ręce.<br>Niezwykły dzień, doniosła chwila<br>i szept nieśmiały: miły&hellip; miła&hellip;<br>Odtąd już razem zawsze i wszędzie,<br>tak miało być i niech tak będzie!</i> <br><br> <strong>29 września 2018r</strong>',
             'image'    => 'http://wrzesniowyslub.pl/images/header-kopia.jpg'
         ];
