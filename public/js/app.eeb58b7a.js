@@ -90,7 +90,7 @@ webpackJsonp([1], {
                 }
             }), w = function () {
                 var t = this, e = t.$createElement, a = t._self._c || e;
-                return a("section", {attrs: {id: "contact"}}, [a("div", {staticClass: "wrapper"}, [a("div", {staticClass: "text"}, [a("div", [a("h2", {domProps: {innerHTML: t._s(t.data.title)}})   /*a("h2", [t._v(t._s(t.data.title))])*/, a("p", [t._v(t._s(t.data.subtitle))])]), t.message ? a("div", {staticClass: "message"}, [t._v(t._s(t.message))]) : a("form", {
+                return a("section", {attrs: {id: "contact"}}, [a("div", {staticClass: "wrapper"}, [a("div", {staticClass: "text"}, [a("div", [a("h2", {domProps: {innerHTML: t._s(t.data.title)}}), a("p", {domProps: {innerHTML: t._s(t.data.subtitle)}}), t.message ? a("div", {staticClass: "message"}, [t._v(t._s(t.message))]) : a("form", {
                     ref: "form",
                     attrs: {novalidate: ""},
                     on: {
