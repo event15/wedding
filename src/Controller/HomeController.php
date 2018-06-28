@@ -47,7 +47,7 @@ final class HomeController extends Controller
     {
         $data = [
             'title'    => 'Martyna <br> <span>&</span> Marek',
-            'subtitle' => 'Ty i ja spośród tysięcy<br>mocno trzymamy się za ręce.<br>Niezwykły dzień, doniosła chwila<br>i szept nieśmiały: miły... miła...<br>Odtąd już razem zawsze i wszędzie,<br>tak miało być i niech tak będzie!',
+            'subtitle' => 'Ty i ja spośród tysięcy<br>mocno trzymamy się za ręce.<br>Niezwykły dzień, doniosła chwila<br>i szept nieśmiały: miły... miła...<br>Odtąd już razem zawsze i wszędzie,<br>tak miało być i niech tak będzie! <br><br> <strong>28 września 2018r</strong>',
             'image'    => 'http://wrzesniowyslub.pl/images/header.jpg'
         ];
 
