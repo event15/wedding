@@ -94,7 +94,7 @@ final class HomeController extends Controller
     {
         $data = [
             'title'    => 'Wesele',
-            'subtitle' => 'Weselmy się i&nbsp;świętujmy małżeństwo Martyny&nbsp;i&nbsp;Marka w&nbsp;leśnym zaciszu jeziora Bukowiec.<br>Parkiet będzie – miejmy nadzieję – zawsze pełny! Zaczynamy o <strong>17:30</strong>',
+            'subtitle' => 'Weselmy się i&nbsp;świętujmy małżeństwo Martyny&nbsp;i&nbsp;Marka w&nbsp;leśnym zaciszu jeziora Bukowiec. Parkiet będzie – miejmy nadzieję – zawsze pełny!<br>Zaczynamy o&nbsp;<strong>17:30</strong>',
             'image'    => 'http://wrzesniowyslub.pl/images/bukowiec.png'
         ];
 
