@@ -352,7 +352,7 @@ webpackJsonp([1], {
             }
         }).$mount("#app")
     }, QmSG: function (t, e) {
-        t.exports = {endpointHost: "http://wrzesniowyslub.pl/"}
+        t.exports = {endpointHost: "http://127.0.0.1:8000/"}
     }
 }, [0]);
 //# sourceMappingURL=app.eeb58b7a.js.map

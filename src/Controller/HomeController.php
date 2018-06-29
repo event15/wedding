@@ -6,7 +6,7 @@ use App\Service\JsonSerializer;
 use PHPMailer\PHPMailer\PHPMailer;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\{
-    HttpFoundation\JsonResponse, HttpFoundation\Request, HttpFoundation\Response
+    HttpFoundation\JsonResponse, HttpFoundation\Request, HttpFoundation\Response, Validator\Constraints\DateTime
 };
 
 /**
@@ -155,19 +155,18 @@ final class HomeController extends Controller
         $mail = new PHPMailer;
         $mail->setFrom('potwierdzenie@wrzesniowyslub.pl', 'Potwierdzenie Rejestracji');
         $mail->addAddress('marwo12@gmail.com', 'My Friend');
-        $mail->Subject  = 'First PHPMailer Message';
-        $mail->Body     = 'Hi! This is my first e-mail sent through PHPMailer.';
+
+        $mail->Subject  = 'Ktoś potwierdził przybycie na ślub';
+        $mail->Body     = json_encode($currentData);
+
         if(!$mail->send()) {
-            echo 'Message was not sent.';
-            echo 'Mailer error: ' . $mail->ErrorInfo;
-        } else {
-            echo 'Message has been sent.';
+            file_put_contents(date('YmdHis') . '.json', json_encode($currentData));
         }
 
         if ($currentData) {
             $result = 'OK';
         }
 
-        return new JsonResponse($currentData, Response::HTTP_OK, ['Content-Type' => 'application/json']);
+        return new JsonResponse($result, Response::HTTP_OK, ['Content-Type' => 'application/json']);
     }
 }
