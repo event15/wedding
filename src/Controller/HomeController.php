@@ -152,17 +152,20 @@ final class HomeController extends Controller
 
         $result = '';
 
-        $mail = new PHPMailer;
-        $mail->setFrom('potwierdzenie@wrzesniowyslub.pl', 'Potwierdzenie Rejestracji');
-        $mail->addAddress('marwo12@gmail.com', 'My Friend');
+        try {
+            $mail = new PHPMailer;
+            $mail->setFrom('potwierdzenie@wrzesniowyslub.pl', 'Potwierdzenie Rejestracji');
+            $mail->addAddress('marwo12@gmail.com', 'My Friend');
 
-        $mail->Subject  = 'Ktoś potwierdził przybycie na ślub';
-        $mail->Body     = json_encode($currentData);
+            $mail->Subject = 'Ktoś potwierdził przybycie na ślub';
+            $mail->Body    = json_encode($currentData);
 
-        if(!$mail->send()) {
-            file_put_contents(date('YmdHis') . '.json', json_encode($currentData));
+            if ( ! $mail->send()) {
+                file_put_contents(date('YmdHis') . '.json', json_encode($currentData));
+            }
+        } catch (\Exception $exception) {
+            var_dump($exception->getMessage());die;
         }
-
         if ($currentData) {
             $result = 'OK';
         }
