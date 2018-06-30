@@ -149,7 +149,6 @@ final class HomeController extends Controller
     public function bookAction(Request $request)
     {
         $currentData = $request->getContent();
-
         $result = '';
 
         $mail = new PHPMailer;
@@ -157,7 +156,6 @@ final class HomeController extends Controller
         $mail->addAddress('marwo12@gmail.com', 'My Friend');
 
         $mail->Subject = 'Ktoś potwierdził przybycie na ślub';
-        var_dump($currentData);die;
         $mail->Body    = json_encode($currentData);
 
         try {
