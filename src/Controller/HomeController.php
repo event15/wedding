@@ -164,7 +164,7 @@ final class HomeController extends Controller
                 file_put_contents(date('YmdHis') . '.json', json_encode($currentData));
             }
         } catch (\Exception $exception) {
-            var_dump($exception->getMessage());die;
+            throw new \Exception($exception->getMessage());
         }
         if ($currentData) {
             $result = 'OK';
