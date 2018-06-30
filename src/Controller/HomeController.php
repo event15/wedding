@@ -148,7 +148,7 @@ final class HomeController extends Controller
      */
     public function bookAction(Request $request)
     {
-        $currentData = $request->getContent();
+        $currentData = $request->request->all();
         $result = '';
 
         $mail = new PHPMailer;
