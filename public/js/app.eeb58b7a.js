@@ -44,7 +44,7 @@ webpackJsonp([1], {
                         name: null,
                         people: null,
                         hotel: null,
-                        email: null,
+                        phone: null,
                         message: !1,
                         data: {title: "", subtitle: ""}
                     }
@@ -80,7 +80,7 @@ webpackJsonp([1], {
                         }
                     }(), submitForm: function () {
                         var t = new FormData;
-                        return t.append("name", this.name), t.append("people", this.people), t.append("hotel", this.hotel), t.append("email", this.email), o()({
+                        return t.append("name", this.name), t.append("people", this.people), t.append("hotel", this.hotel), t.append("phone", this.phone), o()({
                             url: "".concat(l["endpointHost"], "api/book"),
                             method: "post",
                             headers: {"Content-Type": "application/x-www-form-urlencoded"},
@@ -118,25 +118,25 @@ webpackJsonp([1], {
                     }
                 }), a("label", {
                     staticClass: "label",
-                    attrs: {for: "email"}
+                    attrs: {for: "phone"}
                 }, [t._v("Numer teleofonu")]), a("input", {
                     directives: [{
                         name: "model",
                         rawName: "v-model",
-                        value: t.email,
-                        expression: "email"
+                        value: t.phone,
+                        expression: "phone"
                     }, {
                         name: "validate",
                         rawName: "v-validate",
                         value: "required:true",
                         expression: "'required:true'"
                     }],
-                    class: {"has-error": t.errors.has("email")},
-                    attrs: {id: "email", type: "text", name: "email"},
-                    domProps: {value: t.email},
+                    class: {"has-error": t.errors.has("phone")},
+                    attrs: {id: "phone", type: "text", name: "phone"},
+                    domProps: {value: t.phone},
                     on: {
                         input: function (e) {
-                            e.target.composing || (t.email = e.target.value)
+                            e.target.composing || (t.phone = e.target.value)
                         }
                     }
                 }), a("label", {
